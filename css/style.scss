@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+ul,li,ol{
+    list-style-type: none;
+    margin-bottom: 0px;
+}
+:focus{
+    outline: none;
+}
+
+.container{
+    max-width: 1580px;
+    margin: 0 auto;
+}
+
+
+// IMPORT SEC START:
+
+@import "variables";
+@import "font-family";
+@import "banner-css";
+@import "media-query";
+
+// IMPORT SEC END:

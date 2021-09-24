@@ -1,0 +1,383 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul, li, ol {
+  list-style-type: none;
+  margin-bottom: 0px;
+}
+
+:focus {
+  outline: none;
+}
+
+.container {
+  max-width: 1580px;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: url("../fonts/ArialMT.woff2") format("woff2"), url("../fonts/ArialMT.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Optima';
+  src: url("../fonts/Optima-Bold.woff2") format("woff2"), url("../fonts/Optima-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+.banner {
+  background-image: url(../images/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  background-color: #611818;
+  height: 100%;
+  width: 100%;
+  max-width: 21.6%;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+
+.banner .banner-heading {
+  min-height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.banner .banner-heading h1 {
+  font-family: 'Optima';
+  font-size: 224px;
+  line-height: 1.2;
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: bold;
+}
+
+.banner .banner-heading .detail-outerwraper {
+  margin-top: -4%;
+  margin-left: 15px;
+}
+
+.banner .banner-heading .detail-outerwraper a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner .banner-heading .detail-outerwraper a .plus {
+  margin-right: 22px;
+}
+
+.banner .banner-heading .detail-outerwraper a span {
+  font-size: 25px;
+  font-family: 'Arial';
+  font-weight: normal;
+  line-height: 1.2;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.banner .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  right: 31px;
+  bottom: 40px;
+}
+
+.banner .social-icons a {
+  margin-bottom: 20px;
+}
+
+.banner .social-icons a:last-child {
+  margin-bottom: 0px;
+}
+
+.banner .banner-content {
+  background: #fff;
+  max-width: 580px;
+  padding: 72px 66px;
+  position: relative;
+}
+
+.banner .banner-content h2 {
+  font-family: 'Optima';
+  font-size: 66px;
+  text-transform: capitalize;
+  padding-bottom: 21px;
+  margin-bottom: 34px;
+  color: #611818;
+  position: relative;
+}
+
+.banner .banner-content h2::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  max-width: 275px;
+  background-color: #707070;
+  bottom: 0;
+  left: 0;
+}
+
+.banner .banner-content p {
+  font-family: 'Arial';
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+  color: #505050;
+  margin-bottom: 50px;
+}
+
+.banner .banner-content .read-btn a {
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  width: 100%;
+  max-width: 235px;
+  min-height: 55px;
+  font-family: 'Arial';
+  font-weight: normal;
+  background: #611818;
+  background: -webkit-gradient(linear, left top, right top, color-stop(35%, #611818), to(#a36754));
+  background: linear-gradient(90deg, #611818 35%, #a36754 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner .banner-content .cross {
+  position: absolute;
+  top: 23px;
+  right: 23px;
+}
+
+.banner .banner-innerwrap {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+}
+
+@media only screen and (max-width: 1450px) {
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .banner .banner-heading h1 {
+    font-size: 174px;
+  }
+  .banner .banner-heading .detail-outerwraper a .plus {
+    margin-right: 8px;
+  }
+  .banner .banner-heading .detail-outerwraper a span {
+    font-size: 19px;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .banner .banner-heading h1 {
+    font-size: 144px;
+  }
+  .banner .banner-heading .detail-outerwraper {
+    margin-top: -4%;
+  }
+  .banner .banner-heading .detail-outerwraper a .plus {
+    width: 30px;
+    height: 30px;
+  }
+  .banner .banner-heading .detail-outerwraper a span {
+    font-size: 17px;
+  }
+  .banner .banner-content {
+    padding: 62px 56px;
+  }
+  .banner .banner-content h2 {
+    font-size: 56px;
+    padding-bottom: 13px;
+    margin-bottom: 14px;
+  }
+  .banner .banner-content p {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .banner .banner-heading h1 {
+    font-size: 144px;
+  }
+  .banner .banner-heading .detail-outerwraper {
+    margin-top: -1.2%;
+  }
+  .banner .social-icons a {
+    width: 50px;
+    height: 50px;
+  }
+  .banner .banner-content .read-btn a {
+    font-size: 15px;
+    max-width: 215px;
+    min-height: 47px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .banner .banner-heading h1 {
+    font-size: 124px;
+  }
+  .banner .banner-content h2 {
+    font-size: 49px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .banner .banner-heading h1 {
+    font-size: 100px;
+  }
+  .banner .banner-content {
+    padding: 42px;
+    max-width: 530px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .banner::before {
+    content: "";
+    max-width: 38%;
+  }
+  .banner .banner-heading {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 100vh;
+  }
+  .banner .banner-heading h1 {
+    font-size: 100px;
+  }
+  .banner .banner-heading .detail-outerwraper {
+    margin-top: 0;
+  }
+  .banner .banner-innerwrap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 110px 30px;
+  }
+  .banner .banner-content {
+    max-width: 100%;
+  }
+  .banner .banner-content h2 {
+    font-size: 39px;
+  }
+  .banner .banner-content .read-btn a {
+    font-size: 14px;
+    max-width: 175px;
+    min-height: 43px;
+  }
+  .banner .banner-content .cross {
+    top: 13px;
+    right: 17px;
+  }
+  .banner .social-icons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    right: auto;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .banner .social-icons a {
+    margin-bottom: 0px;
+    margin-right: 10px;
+  }
+  .banner .social-icons a:last-child {
+    margin-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .banner .banner-heading {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 100vh;
+  }
+  .banner .banner-heading h1 {
+    font-size: 80px;
+  }
+  .banner .banner-heading .detail-outerwraper a .plus {
+    width: 30px;
+  }
+  .banner .social-icons a {
+    width: 40px;
+    height: 40px;
+  }
+  .banner .banner-content {
+    padding: 40px 19px;
+  }
+  .banner .banner-content p {
+    line-height: 1.5;
+  }
+}
+/*# sourceMappingURL=style.css.map */
